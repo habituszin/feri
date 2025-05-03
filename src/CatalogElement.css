@@ -1,0 +1,12 @@
+.catalog-element {
+  height: calc(100vh - 40px);
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 100px;
+}
+
+.catalog-element > img {
+  position: absolute;
+  grid-area: 1 / 2 / 2 / 3;
+  object-fit: cover;
+}
