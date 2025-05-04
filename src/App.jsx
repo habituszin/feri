@@ -7,7 +7,7 @@ function App() {
     <>
       <header>
         <nav>
-          <img class='nav-logo' src="/logo.png" alt="Logo"/>
+          <img className='nav-logo' src="/logo.png" alt="Logo"/>
           <div>
             <a
               href="/"
@@ -36,14 +36,12 @@ function App() {
           </div>
         </nav>
       </header>
-      <body>
-        <main>
-          {location.pathname === '/' && <h1>Üdvözöljük a Főoldalon!</h1>}
-          {location.pathname === '/catalog' && Catalog()}
-          {location.pathname === '/about' && <h1>Rólunk szóló információk.</h1>}
-          {location.pathname === '/contact' && <h1>Kapcsolat oldal.</h1>}
-        </main>
-      </body>
+      <main>
+        {location.pathname === '/' && <h1>Üdvözöljük a Főoldalon!</h1>}
+        {location.pathname === '/catalog' && Catalog()}
+        {location.pathname === '/about' && <h1>Rólunk szóló információk.</h1>}
+        {location.pathname === '/contact' && <h1>Kapcsolat oldal.</h1>}
+      </main>
     </>
   );
 }
