@@ -1,5 +1,8 @@
 import './App.css'
 import Catalog from './Catalog';
+import AboutUs from './AboutUs';
+import Contact from './Contact';
+import Welcome from './Welcome';
 
 function App() {
 
@@ -37,10 +40,10 @@ function App() {
         </nav>
       </header>
       <main>
-        {location.pathname === '/' && <h1>Üdvözöljük a Főoldalon!</h1>}
+        {location.pathname === '/' && Welcome()}
         {location.pathname === '/catalog' && Catalog()}
-        {location.pathname === '/about' && <h1>Rólunk szóló információk.</h1>}
-        {location.pathname === '/contact' && <h1>Kapcsolat oldal.</h1>}
+        {location.pathname === '/about' && AboutUs()}
+        {location.pathname === '/contact' && Contact()}
       </main>
     </>
   );
